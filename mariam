@@ -1,0 +1,123 @@
+#include <iostream>
+#include<cstdio> 
+using namespace std;
+char character ;
+int updatedtime;
+int updatedday;
+int updateddate;
+   void mainmenu(char character);
+   int main () 
+
+  
+    
+   
+  
+   
+    
+  
+   
+  
+  
+  updateddate = asctime(ti); 
+  cout<<"\t\t\t\t\t\t\t~~~~`Welcome`~~~~\n";
+ cout<<"\t\t\t\t\t\t\tBio*17 Pharma Store\n";
+
+ cout<<"\t\t\t\t\t****************************************************************\n";
+ 
+ 
+
+ 
+ 
+ cout<< "for customers menu press C \n";
+ cout <<"for products menu press P\n";
+ cout<<"for suppliers menu press S\n" ;
+ 
+ cout<<"ENTER YOUR CHOICE :";
+ character = getchar();
+ 
+ 
+  mainmenu(character);
+ 
+ 
+ 
+ system ("pause");
+
+}
+         
+
+
+ void mainmenu(char character) {
+ switch (character) {
+     case'C':
+     case 'c':
+     cout << "for new customer press N \n";
+     cout<<" for current customer press U\n\n";
+    
+  
+     break;
+     case'P':
+     case'p':
+     cout << "for new product press W\n";
+     cout<<" for current product press E\n";
+   
+     break;
+     case'S':
+     case's':
+     cout << "for new supplier press R\n";
+     cout<<" for current supplier press T\n";
+    
+     break;
+     default:
+     cout<<"INVALIDE CHOICE,PLEASE TRY AGAIN";
+     break;
+    }}
+
+
+V2
+===========================================================================================================================================
+
+#include<iostream>
+
+#include <ctime>
+using namespace std;
+int main()
+{
+
+
+
+
+
+ time_t t = time(NULL);
+ tm* Ptr = localtime(&t);
+ 
+
+ int seconds = (Ptr->tm_sec);
+ int minutes =  (Ptr->tm_min) ;
+ int hours =  (Ptr->tm_hour) ;
+int dayofmonth =  (tPtr->tm_mday) ;
+ int monthofyear =  (Ptr->tm_mon)+1 ;
+int  year = (Ptr->tm_year)+1900;
+ int weekday = (Ptr->tm_wday );
+ int dayofyear =  (Ptr->tm_yday );
+
+
+
+ 
+
+ cout << minutes   << endl;
+ cout <<hours  << endl;
+ cout <<dayofmonth << endl;
+ cout <<monthofyear << endl;
+ cout <<year << endl;
+ cout << weekday << endl;
+ cout <<dayofyear << endl;
+ 
+    
+    
+    
+    
+   
+
+    return 0;
+}
+
